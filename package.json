@@ -1,0 +1,30 @@
+{
+  "name": "multiplerolebasedworkflows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:bdd": "cucumber-js",
+    "test:bdd:workflow": "cucumber-js",
+    "allure:generate": "allure generate allure-results --output allure-report",
+    "test:report": "node scripts/test-and-generate-report.cjs"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "allure": "^3.20.1",
+    "allure-cucumberjs": "^3.14.0",
+    "dotenv": "^18.0.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "playwright": "^1.64.1"
+  }
+}
